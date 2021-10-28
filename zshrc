@@ -2,6 +2,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="/usr/bin/vim"
 export DISPLAY=:0
+export PATH="$HOME/.local/bin:$PATH"
 
 # theme
 ZSH_THEME="blinks"
