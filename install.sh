@@ -21,3 +21,5 @@ ln -sfn "$HOME/dotfiles/vimrc" "$HOME/.vimrc"
 vim +PlugInstall +qa
 vim +'CocInstall coc-clangd coc-pyright'
 
+# ssh
+ln -sfn "$/HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
