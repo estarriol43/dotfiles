@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # zshrc
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 
