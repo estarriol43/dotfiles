@@ -1,5 +1,5 @@
 # env variable
-export ZSH="/home/estarriol/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export EDITOR="/usr/bin/vim"
 export DISPLAY=:0
 

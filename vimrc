@@ -51,8 +51,6 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 call plug#begin()
 " Coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'clangd/coc-clangd', {'do': 'yarn install --frozen-lockfile'}
-    Plug 'fannheyward/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
 
 " React Highlight
     Plug 'mxw/vim-jsx'
