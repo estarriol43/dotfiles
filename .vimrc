@@ -60,11 +60,15 @@ call plug#begin()
 " JavaScript
     Plug 'pangloss/vim-javascript'
 
+    Plug 'preservim/tagbar'
+
 " Better f key
     Plug 'rhysd/clever-f.vim'
 
 " status bar
     Plug 'itchyny/lightline.vim'
+
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Veritcal indent line
     Plug 'Yggdroot/indentLine'
@@ -110,6 +114,7 @@ inoremap <silent><expr> <Tab>
 
 " ctags
 set tags=./tags,./TAGS,tags;~,TAGS;~
+nmap <F7> :TagbarToggle<CR>
 
 " cscope
 set cscopetag
@@ -130,3 +135,6 @@ nmap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+" NERDTree
+nmap <F8> :NERDTreeToggle<CR>
