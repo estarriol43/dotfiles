@@ -14,12 +14,13 @@ ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 tmux source "$HOME/.tmux.conf"
 bash "$HOME/.tmux/plugins/tpm/bindings/install_plugins"
 
+# ssh
+ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
+
 # vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -sfn "$HOME/dotfiles/vimrc" "$HOME/.vimrc"
 vim +PlugInstall +qa
-vim +'CocInstall coc-clangd coc-pyright'
+vim +'CocInstall coc-clangd coc-pyright coc-html coc-tsserver'
 
-# ssh
-ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
