@@ -75,6 +75,9 @@ call plug#begin()
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-surround' 
 
+" git
+    Plug 'tpope/vim-fugitive'
+
 " Theme
     Plug 'jacoborus/tender.vim'
 " fzf
