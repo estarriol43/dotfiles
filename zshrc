@@ -8,7 +8,7 @@ export PATH="$HOME/.local/bin:$PATH"
 ZSH_THEME="blinks"
 
 # Plugins
-plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting docker docker-compose)
 
 # Path to oh-my-zsh 
 source $ZSH/oh-my-zsh.sh
