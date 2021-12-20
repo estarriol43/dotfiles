@@ -36,7 +36,7 @@ alias gll="git log --graph --abbrev-commit --decorate --format=format:'%C(bold b
 alias ntuvpn='sudo openconnect -q --protocol=pulse --authgroup="NTU EMail Account" -u b07902103 sslvpn2.ntu.edu.tw'
 alias csievpn='sudo openvpn ~/.config.ovpn'
 alias dwpm='wpm --tag $(date +"%Y/%m/%d")'
-alias rgrep='grep -rnw ./ -e '
+alias rgrep='grep -rn ./ -e '
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
