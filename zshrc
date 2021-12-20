@@ -23,8 +23,8 @@ export LANG=en_US.UTF-8
 KEYTIMEOUT=4
 
 # alias
-alias la="ls -al"
-alias ll="ls -l"
+alias la="ls -alh"
+alias ll="ls -lh"
 alias gs="git status"
 alias gps="git push"
 alias gpl="git pull"
