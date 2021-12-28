@@ -21,5 +21,9 @@ sudo apt install wget
 
 # yarn
 npm install yarn
+
+# clangd
+sudo apt-get install clangd-12
 ```
+
 
