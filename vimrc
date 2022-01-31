@@ -72,7 +72,6 @@ call plug#begin()
     Plug 'Yggdroot/indentLine'
 
     Plug 'ap/vim-css-color'
-    Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-surround' 
 
 " git
@@ -80,8 +79,6 @@ call plug#begin()
 
 " Theme
     Plug 'jacoborus/tender.vim'
-" fzf
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 
 syntax on " Syntax highlight
