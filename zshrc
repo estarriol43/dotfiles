@@ -37,6 +37,8 @@ alias ntuvpn='sudo openconnect -q --protocol=pulse --authgroup="NTU EMail Accoun
 alias csievpn='sudo openvpn ~/.config.ovpn'
 alias dwpm='wpm --tag $(date +"%Y/%m/%d")'
 alias rgrep='grep -rn ./ -e '
+alias temp='watch -n 1 sensors'
+alias kgdb='gdb-multiarch --nx -ex "source ./.gdb-sekvm.py" -ex "target remote localhost:1234" '
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
