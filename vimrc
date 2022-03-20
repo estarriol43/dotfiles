@@ -7,7 +7,7 @@ set cursorline " Display cursor line
 set tabstop=4 " Tab size
 set shiftwidth=4 " Indent size
 set softtabstop=4
-set mouse=a
+set mouse=i
 set ruler " Status of the currrent cursor
 set history=100
 set expandtab " Tab to space
@@ -79,6 +79,8 @@ call plug#begin()
 
 " Theme
     Plug 'jacoborus/tender.vim'
+    
+    Plug 'tpope/vim-commentary'
 call plug#end()
 
 syntax on " Syntax highlight
@@ -95,6 +97,10 @@ autocmd FileType html setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+autocmd BufRead,BufNewFile /home/estarriol/sslab/linux-sekvm/* setlocal noexpandtab
+autocmd BufRead,BufNewFile /home/estarriol/sslab/linux-4.18/* setlocal noexpandtab
+autocmd BufRead,BufNewFile /home/estarriol/sslab/linux-guest/* setlocal noexpandtab
 
 " Theme
 colo tender
