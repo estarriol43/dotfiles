@@ -5,6 +5,8 @@
 * wget
 * npm
 * yarn
+* ripgrep
+* fd-find
 
 ## Solve dependency on Ubuntu
 
