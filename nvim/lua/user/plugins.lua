@@ -60,6 +60,10 @@ return packer.startup(function(use)
   use "jacoborus/tender.vim"
   use "w0ng/vim-hybrid"
   use "altercation/vim-colors-solarized"
+  use "ayu-theme/ayu-vim"
+  use "hzchirs/vim-material"
+  use "doums/darcula"
+  use "fenetikm/falcon"
 
   -- cmp plugins                                                                                                                                                       
   use "hrsh7th/nvim-cmp" -- The completion plugin
