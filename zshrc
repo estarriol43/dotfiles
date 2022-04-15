@@ -22,6 +22,9 @@ export LANG=en_US.UTF-8
 # Keyboard delay 1/100 sec
 KEYTIMEOUT=4
 
+# time zone
+export TZ="/usr/share/zoneinfo/Asia/Taipei"
+
 # alias
 alias la="ls -alh"
 alias ll="ls -lh"
