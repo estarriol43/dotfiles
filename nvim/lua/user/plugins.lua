@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "gpanders/editorconfig.nvim"
   use "akinsho/toggleterm.nvim"
   use 'lewis6991/gitsigns.nvim'
+  use "christoomey/vim-tmux-navigator"
 
   -- colorscheme
   use "jacoborus/tender.vim"
