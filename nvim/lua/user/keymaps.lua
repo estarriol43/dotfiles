@@ -37,6 +37,18 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Insert mode --
+-- Auto-pair
+keymap("i", "()", "()<Left>", opts)
+keymap("i", '""', '""<Left>', opts)
+keymap("i", "''", "''<Left>", opts)
+keymap("i", "[]", "[]<Left>", opts)
+keymap("i", "{}", "{}<Left>", opts)
+keymap("i", "<>", "<><Left>", opts)
+keymap("i", "{{", "{<cr><cr>}<Up>", opts)
+keymap("i", "()", "()<Left>", opts)
+keymap("i", "\\{{", "<Esc>A{<Cr>}<C-o>O", opts)
+
+keymap("i", "\\;", "<C-o>A;", opts)
 keymap("i", "<C-c>", "<Esc>", opts)
 
 -- Visual Block --
