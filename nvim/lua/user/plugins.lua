@@ -47,7 +47,6 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim"
   use "tpope/vim-surround"
   use "rhysd/clever-f.vim"
-  use "jiangmiao/auto-pairs"
   use "kyazdani42/nvim-web-devicons" 
   use "nvim-lualine/lualine.nvim"
   use 'kyazdani42/nvim-tree.lua'
