@@ -14,7 +14,11 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting docker docker-compose)
 source $ZSH/oh-my-zsh.sh
 
 # Color
-export TERM=xterm-256color
+if [[ $TMUX != "" ]] then
+    export TERM="tmux-256color"
+else
+    export TERM="xterm-256color"
+fi
 
 # Language
 export LANG=en_US.UTF-8
