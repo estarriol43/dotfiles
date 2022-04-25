@@ -44,7 +44,10 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "numToStr/Comment.nvim"
+  use {
+    "numToStr/Comment.nvim",
+    commit = '92da1bd973cdb97b445565610572fff3d2b2c316'
+  }
   use "tpope/vim-surround"
   use "rhysd/clever-f.vim"
   use "kyazdani42/nvim-web-devicons" 
@@ -72,10 +75,6 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
-
-  -- snippets                                                                                                                                                          
-  use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP                                                                                                                                                             
   use "neovim/nvim-lspconfig" -- enable LSP                                                                                                                          
