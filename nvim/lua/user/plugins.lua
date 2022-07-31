@@ -58,6 +58,8 @@ return packer.startup(function(use)
   use "akinsho/toggleterm.nvim"
   use 'lewis6991/gitsigns.nvim'
   use "christoomey/vim-tmux-navigator"
+  use "akinsho/bufferline.nvim"
+  use "moll/vim-bbye"
 
   -- colorscheme
   use "jacoborus/tender.vim"

@@ -51,6 +51,12 @@ keymap("i", "\\{{", "<Esc>A{<Cr>}<C-o>O", opts)
 keymap("i", "\\;", "<C-o>A;", opts)
 keymap("i", "<C-c>", "<Esc>", opts)
 
+-- Bufferline --
+-- keymap("n", "<leader>b", ":BufferLinePick<CR>", opts)
+
+-- BBye --
+keymap("n", "<leader>q", ":Bdelete<CR>", opts)
+
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
