@@ -46,6 +46,7 @@ alias dwpm='wpm --tag $(date +"%Y/%m/%d")'
 alias rgrep='grep -rn ./ -e '
 alias temp='watch -n 1 sensors'
 alias kgdb='gdb-multiarch --nx -ex "source ./.gdb-sekvm.py" -ex "target remote localhost:1234" '
+alias hidedirty='git config --add oh-my-zsh.hide-dirty 1'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -61,6 +62,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
