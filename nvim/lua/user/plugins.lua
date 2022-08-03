@@ -44,10 +44,7 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use {
-    "numToStr/Comment.nvim",
-    commit = '92da1bd973cdb97b445565610572fff3d2b2c316'
-  }
+  use "numToStr/Comment.nvim"
   use "tpope/vim-surround"
   use "rhysd/clever-f.vim"
   use "kyazdani42/nvim-web-devicons" 
