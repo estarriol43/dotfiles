@@ -49,9 +49,6 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " Plugin
 call plug#begin()
-" Coc
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " React Highlight
     Plug 'mxw/vim-jsx'
 
@@ -98,23 +95,8 @@ autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType json setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
-autocmd BufRead,BufNewFile /home/estarriol/sslab/linux-sekvm/* setlocal noexpandtab
-autocmd BufRead,BufNewFile /home/estarriol/sslab/linux-4.18/* setlocal noexpandtab
-autocmd BufRead,BufNewFile /home/estarriol/sslab/linux-guest/* setlocal noexpandtab
-
 " Theme
 colo tender
-
-" CoC
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ coc#refresh()
 
 " ctags
 set tags=./tags,./TAGS,tags;~,TAGS;~
