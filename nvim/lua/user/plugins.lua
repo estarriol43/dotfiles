@@ -78,6 +78,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP                                                                                                                          
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
+  use 'dhananjaylatkar/cscope_maps.nvim'
 
   use {
     "nvim-treesitter/nvim-treesitter",
