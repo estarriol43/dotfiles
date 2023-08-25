@@ -24,4 +24,11 @@ ln -sfn "$HOME/dotfiles/vimrc" "$HOME/.vimrc"
 vim +PlugInstall +qa
 
 # neovim
+if [ ! -d "~/.config" ]; then
+    mkdir ~/.config
+fi
 ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
+
+# git
+git config --global user.name "Jian-Lin, Li"
+git config --global user.email "b07902103@ntu.edu.tw"
