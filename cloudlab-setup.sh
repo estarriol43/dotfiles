@@ -35,3 +35,9 @@ wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.
 tar xavf nvim-linux64.tar.gz
 cd ./nvim-linux64
 sudo cp  -r ./* /usr/local/
+
+# git
+git config --global user.name "Jian-Lin, Li"
+git config --global user.email "b07902103@ntu.edu.tw"
+
+sudo chmod 777 /mydata
