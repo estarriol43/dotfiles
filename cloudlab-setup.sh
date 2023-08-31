@@ -25,10 +25,14 @@ packages="
     python3-pip
     zsh
     nasm
+
+    dos2unix
 "
 
 sudo apt update
 sudo apt install -y $packages
+
+pip3 install qemu.qmp
 
 cd /tmp
 wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
