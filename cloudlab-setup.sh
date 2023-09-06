@@ -27,6 +27,7 @@ packages="
     nasm
 
     dos2unix
+    dwarves
 "
 
 sudo apt update
