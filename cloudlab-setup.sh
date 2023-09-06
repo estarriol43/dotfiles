@@ -28,6 +28,9 @@ packages="
 
     dos2unix
     dwarves
+
+    iasl
+    libssl-dev
 "
 
 sudo apt update
