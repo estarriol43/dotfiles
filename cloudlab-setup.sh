@@ -31,12 +31,15 @@ packages="
 
     iasl
     libssl-dev
+
+    libaprutil1-dev
+    libapr1-dev
 "
 
 sudo apt update
 sudo apt install -y $packages
 
-pip3 install qemu.qmp
+pip3 install qemu.qmp matplotlib pandas
 
 cd /tmp
 wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
