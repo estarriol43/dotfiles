@@ -34,6 +34,9 @@ packages="
 
     libaprutil1-dev
     libapr1-dev
+
+    nfs-common
+    nfs-kernel-server
 "
 
 sudo apt update
