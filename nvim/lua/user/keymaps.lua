@@ -22,8 +22,8 @@ vim.g.maplocalleader = " "
 -- Resize with arrows
 keymap("n", "<C-w><Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-w><Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-w><Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-w><Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-w><Right>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-w><Left>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
