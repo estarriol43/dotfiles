@@ -58,7 +58,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
 
   -- colorscheme
-  use "jacoborus/tender.vim"
+  use "estarriol43/tender.vim"
   use "w0ng/vim-hybrid"
   use "altercation/vim-colors-solarized"
   use "ayu-theme/ayu-vim"
