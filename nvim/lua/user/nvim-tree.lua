@@ -4,4 +4,8 @@ if not status_ok then
   return
 end
 
-nvimtree.setup {}
+nvimtree.setup ({
+  filters = {
+    dotfiles = true,
+  }
+})
