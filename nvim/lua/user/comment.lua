@@ -1,7 +1,10 @@
-local status_ok, comment = pcall(require, "Comment")
-if not status_ok then
-  vim.notify("Comment not install")
-  return
+local M = {
+  "numToStr/Comment.nvim",
+  event = "VeryLazy"
+}
+
+function M.config()
+  require("Comment").setup({})
 end
 
-comment.setup {}
+return M
