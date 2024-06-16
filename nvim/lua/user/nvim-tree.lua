@@ -1,11 +1,10 @@
-local status_ok, nvimtree  = pcall(require, "nvim-tree")
-if not status_ok then
-  vim.notify("nvim-tree not installed")
-  return
+local M = {
+  "kyazdani42/nvim-tree.lua",
+  event = "VeryLazy",
+}
+
+function M.config()
+  require("nvim-tree").setup({})
 end
 
-nvimtree.setup ({
-  filters = {
-    dotfiles = true,
-  }
-})
+return M
