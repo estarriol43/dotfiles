@@ -1,7 +1,11 @@
-local colorscheme = "tender"
+local M = {
+  "estarriol43/tender.vim",
+  lazy = false,
+  priority = 1000,
+}
 
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then
-  vim.notify("colorscheme " .. colorscheme .. " not found!")
-  return
+function M.config()
+  vim.cmd.colorscheme "tender"
 end
+
+return M
