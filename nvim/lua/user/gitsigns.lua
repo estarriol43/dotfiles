@@ -1,7 +1,11 @@
-local status_ok, gitsigns  = pcall(require, "gitsigns")
-if not status_ok then
-  vim.notify("gitsigns not installed")
-  return
+local M = {
+  "lewis6991/gitsigns.nvim",
+  event = "BufEnter",
+  cmd = "GitSigns"
+}
+
+function M.config()
+  require("gitsigns").setup({})
 end
 
-gitsigns.setup {}
+return M
