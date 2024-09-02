@@ -25,6 +25,8 @@ packages="
     python3-pip
     zsh
     nasm
+    unzip
+    npm
 
     dos2unix
     dwarves
