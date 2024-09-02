@@ -10,6 +10,8 @@ packages="
     python3
     python3-pip
     zsh
+    unzip
+    npm
 "
 
 sudo apt update
