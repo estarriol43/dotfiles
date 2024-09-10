@@ -6,19 +6,10 @@ local M = {
 }
 
 function M.config()
-  local servers = {
-    "pyright",
-    "clangd",
-  }
-
   require("mason").setup {
     ui = {
       border = "rounded",
     },
-  }
-
-  require("mason-lspconfig").setup {
-    ensure_installed = servers,
   }
 end
 
