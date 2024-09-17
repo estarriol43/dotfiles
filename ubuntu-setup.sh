@@ -3,6 +3,7 @@
 packages="
     vim
     git 
+    tmux
     fd-find
     ripgrep
     cscope

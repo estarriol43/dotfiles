@@ -10,7 +10,11 @@ packages="
     zlib1g-dev
     ninja-build
     flex
+    bc
     bison
+    cmake
+    vim
+    tmux
 
     libelf-dev
     libdwarf-dev
