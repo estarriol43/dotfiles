@@ -7,6 +7,7 @@ packages="
     libglib2.0-dev
     libfdt-dev
     libpixman-1-dev
+    libncurses5-dev
     zlib1g-dev
     ninja-build
     flex
