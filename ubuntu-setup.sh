@@ -19,10 +19,10 @@ sudo apt update
 sudo apt install -y $packages
 
 cd /tmp
-wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
-tar xavf nvim-linux64.tar.gz
-cd ./nvim-linux64
-sudo cp  -r ./* /usr/local/
+git clone https://github.com/neovim/neovim.git
+cd ./neovim
+make CMAKE_BUILD_TYPE=Release
+sudo make install
 
 # git
 git config --global user.name "Jian-Lin Li"
