@@ -13,6 +13,7 @@ packages="
     zsh
     unzip
     npm
+    gettext
 "
 
 sudo apt update

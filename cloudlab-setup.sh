@@ -10,6 +10,7 @@ packages="
     libncurses5-dev
     zlib1g-dev
     ninja-build
+    gettext
     flex
     bc
     bison
