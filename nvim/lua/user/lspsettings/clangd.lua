@@ -3,3 +3,6 @@ if vim.loop.os_uname().sysname == "FreeBSD" then
     cmd = { "/usr/local/llvm18/bin/clangd" }
   }
 end
+
+return {
+}
