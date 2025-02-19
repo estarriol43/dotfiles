@@ -31,6 +31,7 @@ function M.config()
   local servers = {
     "clangd",
     "pyright",
+    "gopls",
   }
 
   local default_diagnostic_config = {
