@@ -42,6 +42,30 @@ for k, v in pairs(options) do
   vim.opt[k] = v
 end
 
+-- Indent Settings
+
+local indent_settings = {
+    javascript = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    typescript = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    ccs = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    luy = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    html = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    python = { expandtab = true, shiftwidth = 4, tabstop = 4 },
+    go = { expandtab = false, shiftwidth = 4, tabstop = 4 },
+}
+
+for filetype, opts in pairs(indent_settings) do
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = filetype,
+        callback = function()
+            for opt, val in pairs(opts) do
+                vim.opt_local[opt] = val
+            end
+        end
+    })
+end
+
+
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
