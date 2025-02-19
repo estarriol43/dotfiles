@@ -4,7 +4,12 @@ local M = {
 }
 
 function M.config()
-  require("nvim-tree").setup({})
+  require("nvim-tree").setup( {
+    git = {
+      enable = true,
+      timeout = 400 -- (in ms)
+    }
+  })
 end
 
 return M
