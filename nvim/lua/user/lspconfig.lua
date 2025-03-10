@@ -31,7 +31,7 @@ function M.config()
   local servers = {
     "clangd",
     "pyright",
-    "tsserver",
+    "ts_ls",
     "gopls",
   }
 
