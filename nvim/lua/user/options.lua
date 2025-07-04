@@ -28,7 +28,7 @@ local options = {
   cursorline = true,                       -- highlight the current line
   number = true,                           -- set numbered lines
   relativenumber = true,                  -- set relative numbered lines
-  numberwidth = 4,                         -- set number column width to 4 {default 4}
+  numberwidth = 4,                         -- set number column width to 4
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
@@ -41,6 +41,30 @@ vim.opt.shortmess:append "c"
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
+-- Indent Settings
+
+local indent_settings = {
+    javascript = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    typescript = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    ccs = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    luy = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    html = { expandtab = true, shiftwidth = 2, tabstop = 2 },
+    python = { expandtab = true, shiftwidth = 4, tabstop = 4 },
+    go = { expandtab = false, shiftwidth = 4, tabstop = 4 },
+}
+
+for filetype, opts in pairs(indent_settings) do
+    vim.api.nvim_create_autocmd("FileType", {
+        pattern = filetype,
+        callback = function()
+            for opt, val in pairs(opts) do
+                vim.opt_local[opt] = val
+            end
+        end
+    })
+end
+
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]

@@ -5,7 +5,11 @@ local M = {
 }
 
 function M.config()
-  require("gitsigns").setup({})
+  require("gitsigns").setup({
+    diff_opts = {
+      vertical = true,
+    },
+  })
 end
 
 return M
