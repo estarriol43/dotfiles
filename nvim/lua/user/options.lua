@@ -52,6 +52,7 @@ local indent_settings = {
     html = { expandtab = true, shiftwidth = 2, tabstop = 2 },
     python = { expandtab = true, shiftwidth = 4, tabstop = 4 },
     go = { expandtab = false, shiftwidth = 4, tabstop = 4 },
+    c = { expandtab = false, shiftwidth = 8, tabstop = 8 },
 }
 
 for filetype, opts in pairs(indent_settings) do
