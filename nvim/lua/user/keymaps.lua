@@ -54,8 +54,7 @@ keymap("i", "<C-c>", "<Esc>", opts)
 -- Bufferline --
 -- keymap("n", "<leader>b", ":BufferLinePick<CR>", opts)
 
--- BBye --
-keymap("n", "<leader>q", ":Bdelete<CR>", opts)
+keymap("n", "<leader>q", ":q<CR>", opts)
 
 -- Visual Block --
 -- Move text up and down
