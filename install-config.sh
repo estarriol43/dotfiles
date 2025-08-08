@@ -20,6 +20,11 @@ ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
 # vim
 ln -sfn "$HOME/dotfiles/vimrc" "$HOME/.vimrc"
 
-# neovim
 mkdir -p ~/.config
+
+# neovim
 ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
+
+# clangd
+mkdir -p ~/.config/clangd
+ln -sfn "$HOME/dotfiles/clangd.config" "$HOME/.config/clangd/config.yaml"
