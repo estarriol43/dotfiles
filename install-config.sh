@@ -12,7 +12,7 @@ ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 tmux source "$HOME/.tmux.conf"
-bash "$HOME/.tmux/plugins/tpm/bindings/install_plugins"
+bash "$HOME/.tmux/plugins/tpm/bin/install_plugins"
 
 # ssh
 ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
@@ -21,7 +21,5 @@ ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
 ln -sfn "$HOME/dotfiles/vimrc" "$HOME/.vimrc"
 
 # neovim
-if [ ! -d "~/.config" ]; then
-    mkdir ~/.config
-fi
+mkdir -p ~/.config
 ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
