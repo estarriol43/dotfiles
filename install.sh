@@ -18,10 +18,7 @@ bash "$HOME/.tmux/plugins/tpm/bindings/install_plugins"
 ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
 
 # vim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -sfn "$HOME/dotfiles/vimrc" "$HOME/.vimrc"
-vim +PlugInstall +qa
 
 # neovim
 if [ ! -d "~/.config" ]; then
