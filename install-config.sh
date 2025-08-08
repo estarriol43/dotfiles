@@ -13,6 +13,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
 tmux source "$HOME/.tmux.conf"
 bash "$HOME/.tmux/plugins/tpm/bin/install_plugins"
+bash "$HOME/.tmux/plugins/tpm/bindings/install_plugins"
 
 # ssh
 ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
