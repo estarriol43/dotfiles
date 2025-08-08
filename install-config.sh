@@ -29,3 +29,8 @@ ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
 # clangd
 mkdir -p ~/.config/clangd
 ln -sfn "$HOME/dotfiles/clangd.config" "$HOME/.config/clangd/config.yaml"
+
+# git
+git config --global user.name "Jian-Lin Li"
+git config --global user.email "lijianlin1999@gmail.com"
+git config --global core.editor "vim"
