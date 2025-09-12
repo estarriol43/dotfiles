@@ -14,6 +14,7 @@ packages="
     unzip
     npm
     gettext
+    bat
 "
 
 sudo apt update
