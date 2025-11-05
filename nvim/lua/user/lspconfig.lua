@@ -25,7 +25,6 @@ end
 
 function M.config()
 
-  local lspconfig = require "lspconfig"
   local icons = require "user.icons"
 
   local servers = {
@@ -80,7 +79,8 @@ function M.config()
       opts = vim.tbl_deep_extend("force", settings, opts)
     end
 
-    lspconfig[server].setup(opts)
+    vim.lsp.config(server, opts)
+    vim.lsp.enable(server)
   end
 end
 
