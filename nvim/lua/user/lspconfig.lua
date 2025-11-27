@@ -32,6 +32,7 @@ function M.config()
     "pyright",
     "ts_ls",
     "gopls",
+    "bashls"
   }
 
   local default_diagnostic_config = {
