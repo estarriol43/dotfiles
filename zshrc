@@ -27,3 +27,5 @@ alias hidedirty='git config --add oh-my-zsh.hide-dirty 1'
 alias bat='batcat'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(zoxide init zsh)"
