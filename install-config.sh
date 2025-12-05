@@ -3,17 +3,10 @@
 set +x
 
 # zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" ""  --unattended
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ln -sfn "$HOME/dotfiles/zshrc" "$HOME/.zshrc"
 
 # tmux
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -sfn "$HOME/dotfiles/tmux.conf" "$HOME/.tmux.conf"
-tmux source "$HOME/.tmux.conf"
-bash "$HOME/.tmux/plugins/tpm/bin/install_plugins"
-bash "$HOME/.tmux/plugins/tpm/bindings/install_plugins"
 
 # ssh
 ln -sfn "$HOME/dotfiles/ssh.config" "$HOME/.ssh/config"
@@ -31,6 +24,20 @@ mkdir -p ~/.config/clangd
 ln -sfn "$HOME/dotfiles/clangd.config" "$HOME/.config/clangd/config.yaml"
 
 # git
-git config --global user.name "Jian-Lin Li"
-git config --global user.email "lijianlin1999@gmail.com"
+USER_NAME="Jian-Lin Li"
+USER_EMAIL="lijianlin1999@gmail.com"
+
+while getopts "n:e:" opt; do
+  case $opt in
+    n)
+      USER_NAME="$OPTARG"
+      ;;
+    e)
+      USER_EMAIL="$OPTARG"
+      ;;
+  esac
+done
+
+git config --global user.name "$USER_NAME"
+git config --global user.email "$USER_EMAIL"
 git config --global core.editor "vim"

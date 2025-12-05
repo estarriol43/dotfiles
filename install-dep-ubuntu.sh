@@ -20,6 +20,14 @@ packages="
 sudo apt update
 sudo apt install -y $packages
 
+# tmux plugin
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# zsh plugin
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" ""  --unattended
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # neovim
 cd /tmp
 git clone https://github.com/neovim/neovim.git
