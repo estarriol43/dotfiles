@@ -6,6 +6,8 @@ packages="
     tmux
     fd-find
     ripgrep
+    curl
+    ccache
     cscope
     htop
     python3
