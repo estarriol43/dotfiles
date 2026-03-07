@@ -23,6 +23,10 @@ ln -sfn "$HOME/dotfiles/nvim" "$HOME/.config/nvim"
 mkdir -p ~/.config/clangd
 ln -sfn "$HOME/dotfiles/clangd.config" "$HOME/.config/clangd/config.yaml"
 
+# ccache
+mkdir -p ~/.config/ccache
+ln -sfn "$HOME/dotfiles/ccache.conf" "$HOME/.config/ccache/ccache.conf"
+
 # git
 USER_NAME="Jian-Lin Li"
 USER_EMAIL="lijianlin1999@gmail.com"
