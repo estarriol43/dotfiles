@@ -23,6 +23,7 @@ KEYTIMEOUT=4
 alias la="ls -alh"
 alias ll="ls -lh"
 alias hh="history"
+alias glo="git log --oneline --graph --all --decorate"
 alias hidedirty='git config --add oh-my-zsh.hide-dirty 1'
 alias bat='batcat'
 
