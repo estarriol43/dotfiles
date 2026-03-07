@@ -1,5 +1,6 @@
 local M = {
   "nvim-treesitter/nvim-treesitter",
+  branch = "master",
   event = { "BufReadPost", "BufNewFile" },
 }
 
