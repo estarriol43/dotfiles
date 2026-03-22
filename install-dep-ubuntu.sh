@@ -17,6 +17,9 @@ packages="
     npm
     gettext
     bat
+    cmake
+    mosh
+    build-essential
 "
 
 sudo apt update
@@ -32,7 +35,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 # neovim
 cd /tmp
-git clone https://github.com/neovim/neovim.git
+git clone --depth 1 --branch stable https://github.com/neovim/neovim.git
 cd ./neovim
 make CMAKE_BUILD_TYPE=Release -j$(nproc)
 sudo make install
