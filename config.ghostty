@@ -1,0 +1,6 @@
+theme = Dark Modern
+font-feature = -calt
+font-feature = -liga
+font-feature = -dligA
+
+shell-integration-features = no-title

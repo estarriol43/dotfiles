@@ -27,6 +27,10 @@ ln -sfn "$HOME/dotfiles/clangd.config" "$HOME/.config/clangd/config.yaml"
 mkdir -p ~/.config/ccache
 ln -sfn "$HOME/dotfiles/ccache.conf" "$HOME/.config/ccache/ccache.conf"
 
+# ghostty
+mkdir -p ~/.config/ghostty
+ln -sfn "$HOME/dotfiles/config.ghostty" "$HOME/.config/ghostty/config.ghostty"
+
 # git
 USER_NAME="Jian-Lin Li"
 USER_EMAIL="lijianlin1999@gmail.com"
