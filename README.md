@@ -7,15 +7,7 @@ Managed with [chezmoi](https://www.chezmoi.io/).
 Initialize and apply dotfiles on a new machine:
 
 ```bash
-chezmoi init --apply <username_or_repo_url>
-```
-
-Or using the local repository directory:
-
-```bash
-chezmoi init --apply --source /path/to/dotfiles
-# or run the helper script
-./install-config.sh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init --apply estarriol43
 ```
 
 ## Useful chezmoi commands
@@ -23,4 +15,5 @@ chezmoi init --apply --source /path/to/dotfiles
 - View managed target files: `chezmoi managed`
 - See changes before applying: `chezmoi diff`
 - Apply target state to home directory: `chezmoi apply`
-- Update source state from destination: `chezmoi re-add`
+- Update a source state from destination: `chezmoi add <FILE>`
+- Update all source states from destination: `chezmoi re-add`
