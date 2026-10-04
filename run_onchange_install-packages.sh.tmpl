@@ -1,0 +1,21 @@
+{{ if (eq .chezmoi.osRelease.id "ubuntu") -}}
+#!/bin/bash
+
+echo "Debian-based system detected. Installing packages via apt..."
+
+sudo apt-get update && sudo apt-get install -y --install-recommends \
+{{ range .packages.ubuntu.apt -}}
+    {{ . | quote }} \
+{{ end -}}
+
+{{ else if (eq .chezmoi.osRelease.id "fedora") -}}
+#!/bin/bash
+
+echo "Fedora-based system detected. Installing packages via dnf..."
+
+sudo dnf -y install \
+{{ range .packages.fedora.dnf -}}
+    {{ . | quote }} \
+{{ end -}}
+
+{{ end -}}

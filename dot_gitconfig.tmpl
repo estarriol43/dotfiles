@@ -1,0 +1,6 @@
+[user]
+	name = {{ if hasKey . "name" }}{{ .name }}{{ else }}Jian-Lin Li{{ end }}
+	email = {{ if hasKey . "email" }}{{ .email }}{{ else }}lijianlin1999@gmail.com{{ end }}
+[core]
+	editor = vim
+

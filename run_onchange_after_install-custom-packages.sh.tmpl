@@ -1,0 +1,8 @@
+#!/bin/bash
+
+{{ range $name, $i := .installers -}}
+if ! command -v {{ $i.check }} >/dev/null 2>&1; then
+    echo "Installing {{ $name }}..."
+    {{ $i.cmd }}
+fi
+{{ end -}}

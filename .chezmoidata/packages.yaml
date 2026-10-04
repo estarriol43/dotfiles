@@ -1,0 +1,67 @@
+packages:
+  ubuntu:
+    apt:
+    - 'vim'
+    - 'git'
+    - 'tmux'
+    - 'fd-find'
+    - 'ripgrep'
+    - 'curl'
+    - 'ccache'
+    - 'cscope'
+    - 'htop'
+    - 'btop'
+    - 'python3'
+    - 'python3-pip'
+    - 'python3-venv'
+    - 'zsh'
+    - 'unzip'
+    - 'npm'
+    - 'gettext'
+    - 'bat'
+    - 'cmake'
+    - 'mosh'
+    - 'build-essential'
+    - 'tree'
+  fedora:
+    dnf:
+    - 'vim'
+    - 'git'
+    - 'tmux'
+    - 'fd-find'
+    - 'ripgrep'
+    - 'curl'
+    - 'ccache'
+    - 'cscope'
+    - 'htop'
+    - 'btop'
+    - 'python3'
+    - 'python3-pip'
+    - 'python3-virtualenv'
+    - 'zsh'
+    - 'unzip'
+    - 'npm'
+    - 'gettext'
+    - 'bat'
+    - 'cmake'
+    - 'mosh'
+    - '@development-tools'
+    - '@c-development'
+    - 'tree'
+
+installers:
+  zoxide:
+    check: zoxide
+    cmd: curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+  fzf:
+    check: fzf
+    cmd: ~/.fzf/install --key-bindings --completion --update-rc
+  claude:
+    check: claude
+    cmd: curl -fsSL https://claude.ai/install.sh | bash
+  codex:
+    check: codex
+    cmd: curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=yes sh
+  tpm-plugins:
+    check: dummy-cmd
+    cmd: ~/.tmux/plugins/tpm/bin/install_plugins

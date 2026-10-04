@@ -1,0 +1,12 @@
+{{- $name := promptStringOnce . "name" "Git user name" "Jian-Lin Li" -}}
+{{- $email := promptStringOnce . "email" "Git user email" "lijianlin1999@gmail.com" -}}
+
+encryption = "age"
+
+[age]
+    identity = "{{ .chezmoi.homeDir }}/.key.txt"
+    recipient = "age1zlh6pdknavkhgapagknsujcgfvnndhfrn546kuj37pxdak5l4aqslhh7x7"
+
+[data]
+    name = {{ $name | quote }}
+    email = {{ $email | quote }}

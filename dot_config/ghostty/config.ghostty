@@ -1,0 +1,5 @@
+theme = Dark Modern
+font-feature = -calt
+font-feature = -liga
+font-feature = -dligA
+shell-integration-features = ssh-env,ssh-terminfo
