@@ -13,7 +13,7 @@ brew install -y \
 
 echo "Debian-based system detected. Installing packages via apt..."
 
-sudo apt-get update && sudo apt-get install -y --install-recommends \
+sudo apt-get update && DEBIAN_FRONTEND=noninteractive sudo apt-get install -y --install-recommends \
 {{ range .packages.ubuntu.apt -}}
     {{ . | quote }} \
 {{ end -}}
