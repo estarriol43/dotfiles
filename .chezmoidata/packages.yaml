@@ -83,6 +83,3 @@ installers:
   codex:
     check: codex
     cmd: curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=yes sh
-  tpm-plugins:
-    check: dummy-cmd
-    cmd: ~/.tmux/plugins/tpm/bin/install_plugins
