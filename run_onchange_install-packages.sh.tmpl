@@ -1,4 +1,14 @@
-{{ if (eq .chezmoi.osRelease.id "ubuntu") -}}
+{{ if (eq .chezmoi.os "darwin") -}}
+#!/bin/bash
+
+echo "MacOS system detected. Installing packages via brew..."
+
+brew install -y \
+{{ range .packages.macos.brew -}}
+    {{ . | quote }} \
+{{ end -}}
+
+{{ else if (eq .chezmoi.osRelease.id "ubuntu") -}}
 #!/bin/bash
 
 echo "Debian-based system detected. Installing packages via apt..."
