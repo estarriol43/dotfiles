@@ -12,6 +12,13 @@ export PATH="$HOME/.local/bin:$PATH"
 export LC_ALL="en_US.UTF-8"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+export BB_ENV_PASSTHROUGH_ADDITIONS="DL_DIR SSTATE_DIR BB_HASHSERVE_DB_DIR BB_NUMBER_THREADS PARALLEL_MAKE"
+export DL_DIR="/data/yoctobuild/bitbake.downloads"
+export SSTATE_DIR="/data/yoctobuild/bitbake.sstate"
+export BB_HASHSERVE_DB_DIR="/data/yoctobuild/bitbake.sstate"
+export BB_NUMBER_THREADS="4"
+export PARALLEL_MAKE="-j 16"
+
 # theme
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
