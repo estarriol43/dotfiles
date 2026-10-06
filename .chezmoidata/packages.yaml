@@ -23,6 +23,7 @@ packages:
     - 'mosh'
     - 'build-essential'
     - 'tree'
+    - 'sshpass'
   fedora:
     dnf:
     - 'vim'
@@ -48,6 +49,7 @@ packages:
     - '@development-tools'
     - '@c-development'
     - 'tree'
+    - 'sshpass'
   macos:
     brew:
     - 'vim'
@@ -69,6 +71,7 @@ packages:
     - 'cmake'
     - 'mosh'
     - 'tree'
+    - 'sshpass'
 
 installers:
   zoxide:
